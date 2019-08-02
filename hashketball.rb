@@ -151,8 +151,9 @@ def team_colors(name)
 end
 
 def team_names
+  new_arr =[]
   game_hash.each do |teams,info|
-    binding.pry
-    return teams[:team_name]
+     new_arr.push(info[:team_name])
   end
+  new_arr
 end
