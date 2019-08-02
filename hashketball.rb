@@ -180,25 +180,15 @@ def player_stats(name)
  end
 end
 
-def big_shoe_rebounds
-
-  player_name = ""
-  shoe_size = 0
-  game_hash.each do |location, attributes|
-    attributes.each do |attribute, info|
-      if info.class == Hash
-        info.each do |player, stats|
-            stats.each do |stat, int|
-              if stat == :shoe
-                if int > shoe_size
-                  shoe_size = int
-                  player_name = player
-                end
-              end
-            end
-          end
-        return hash[location][attribute][player_name][:rebounds]
+def big_shoe_rebounds(name)
+  points = nil
+  game_hash.each do |teams, info| #teams = home,away , info = inside hash
+    info[:players].each do |player,attributes|
+      if name == player
+        points = attributes[:points]
       end
     end
   end
+  return points
 end
+
