@@ -181,7 +181,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  
+
   player_name = ""
   shoe_size = 0
   game_hash.each do |location, attributes|
