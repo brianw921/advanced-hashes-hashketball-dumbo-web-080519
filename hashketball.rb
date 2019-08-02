@@ -154,7 +154,6 @@ def team_names(name)
   game_hash.each do |teams,info|
     if name == info[:team_name]
      return info[:team_name]
-     binding.pry
    end
   end
 end
