@@ -175,6 +175,7 @@ def player_stats(name)
   game_hash.each do |teams, info|
    return info[:players].each do |player_name, player_data|
      if player_name == name
+       binding.pry 
        player_stats["player_name"] = player_data
      end
  end
