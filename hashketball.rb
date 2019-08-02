@@ -151,8 +151,8 @@ end
 #
 # end
 
-def team_colors team
- game_hash.each do |team_position, team_data|
+def team_colors(team)
+ game_hash.each do |teams, info|
    if team == team_data[:team_name]
      return team_data[:colors]
    end
