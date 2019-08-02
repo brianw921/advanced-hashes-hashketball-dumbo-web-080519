@@ -180,9 +180,9 @@ def player_stats(name)
  end
 end
 
-def big_shoe_rebounds(name)
+def big_shoe_rebounds
 
-  game_hash.each do |teams, info| #teams = home,away , info = inside hash
+  game_hash.each do |teams, info|
 
     info[:players].each do |player,attributes|
 
