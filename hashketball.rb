@@ -189,7 +189,6 @@ def big_shoe_rebounds
       if info.class == Hash
         info.each do |player, stats|
             stats.each do |stat, int|
-              binding.pry 
               if stat == :shoe
                 if int > shoe_size
                   shoe_size = int
