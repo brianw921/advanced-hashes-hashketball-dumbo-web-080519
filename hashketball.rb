@@ -181,7 +181,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds(name)
-  points = nil
+  
   game_hash.each do |teams, info| #teams = home,away , info = inside hash
     info[:players].each do |player,attributes|
       if name == player
