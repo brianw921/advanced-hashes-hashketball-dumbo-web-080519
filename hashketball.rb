@@ -158,7 +158,7 @@ def team_names
   new_arr
 end
 
-def player_numbers
+def player_numbers(team_name)
   game_hash.each do |teams,info|
 
   end
