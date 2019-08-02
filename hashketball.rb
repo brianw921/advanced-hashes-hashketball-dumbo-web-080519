@@ -192,5 +192,5 @@ def big_shoe_rebounds(name)
       end
     end
   end
-  return points
+  return rebound
 end
