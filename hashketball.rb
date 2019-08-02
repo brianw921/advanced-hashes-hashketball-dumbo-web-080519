@@ -147,4 +147,5 @@ def team_colors(team)
      return info[:colors]
    end
   end
+  binding.pry 
 end
