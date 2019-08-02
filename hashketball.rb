@@ -179,7 +179,7 @@ def player_stats(name)
      end
    end
  end
-  player_stats.values
+  player_stats
 end
 
 def big_shoe_rebounds(name)
