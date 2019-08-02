@@ -159,13 +159,13 @@ def team_names
 end
 
 def player_numbers(team_name)
-  team_arr = []
+  team_num = []
   game_hash.each do |teams,info|
-    if team_name == info[:team_name]
+    if team_num == info[:team_name]
       info[:players].each do |name|
         team_arr.push(name[:number])
       end
     end
   end
-  team_arr
+  team_num
 end
