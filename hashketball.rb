@@ -183,9 +183,9 @@ end
 def big_shoe_rebounds(name)
 
   game_hash.each do |teams, info| #teams = home,away , info = inside hash
-      binding.pry
+      
     info[:players].each do |player,attributes|
-      binding.pry
+    
     end
   end
 
