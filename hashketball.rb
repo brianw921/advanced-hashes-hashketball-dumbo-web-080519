@@ -163,12 +163,12 @@ def player_numbers(team_name)
   game_hash.each do |teams,info|
     binding.pry 
     if team_num == info[:team_name]
-      binding.pry 
+      binding.pry
       info[:players].each do |name|
         team_num.push(name[:number])
       end
     end
   end
   team_num
-  
+
 end
