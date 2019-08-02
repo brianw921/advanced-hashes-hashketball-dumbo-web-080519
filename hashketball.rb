@@ -148,7 +148,7 @@ end
 #      binding.pry
 #    end
 #   end
-# 
+#
 # end
 def team_colors(team_name)
   find_team = team_stats.find {|team| team.fetch(:team_name) == team_name}
