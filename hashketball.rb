@@ -179,5 +179,5 @@ def player_stats(name)
      end
    end
  end
-  player_stats[1]
+  player_stats
 end
