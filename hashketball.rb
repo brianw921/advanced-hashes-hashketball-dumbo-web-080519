@@ -135,7 +135,6 @@ def shoe_size(name)
     info[:players].each do |player,attributes|
       if name == player
         shoe = attributes[:shoe]
-        binding.pry
       end
     end
   end
