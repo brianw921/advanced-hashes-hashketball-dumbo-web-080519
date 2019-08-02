@@ -159,6 +159,7 @@ def team_names
 end
 
 def player_numbers(team_name)
+  team_arr = []
   game_hash.each do |teams,info|
 
   end
