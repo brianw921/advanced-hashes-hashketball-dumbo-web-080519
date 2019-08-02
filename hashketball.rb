@@ -162,6 +162,7 @@ def player_numbers(team_name)
   team_num = []
   game_hash.each do |teams,info|
     if team_num == info[:team_name]
+      binding.pry 
       info[:players].each do |name|
         team_num.push(name[:number])
       end
