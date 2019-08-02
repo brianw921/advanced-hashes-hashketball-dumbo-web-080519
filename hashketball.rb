@@ -176,8 +176,6 @@ def player_stats name
    return team_data[:players].each do |player_name, player_data|
      if player_name == name
        return player_data
-       elsif player_name =! name
-       return nil
      end
  end
 end
