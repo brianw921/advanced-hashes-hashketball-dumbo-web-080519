@@ -176,7 +176,7 @@ def player_stats(name)
    return info[:players].each do |player_name, player_data|
      binding.pry
      if player_name == name
-       binding.pry 
+       binding.pry
        player_stats["player_name"] = player_data
      end
  end
