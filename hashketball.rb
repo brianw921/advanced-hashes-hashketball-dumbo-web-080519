@@ -141,12 +141,16 @@ def shoe_size(name)
   return shoe
 end
 
-def team_colors(name)
-  game_hash.each do |teams,info|
-    if name = teams
-     return info[:colors]
-     binding.pry
-   end
-  end
-
-end
+# def team_colors(name)
+#   game_hash.each do |teams,info|
+#     if name = teams
+#      return info[:colors]
+#      binding.pry
+#    end
+#   end
+# 
+# end
+def team_colors(team_name)
+  find_team = team_stats.find {|team| team.fetch(:team_name) == team_name}
+  find_team.fetch(:colors)
+end 
