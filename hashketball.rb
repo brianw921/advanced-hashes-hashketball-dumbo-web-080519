@@ -157,3 +157,6 @@ def team_names
   end
   new_arr
 end
+
+def player_numbers
+end
