@@ -164,6 +164,7 @@ def player_numbers(team_name)
     if team_name == info[:team_name]
       binding.pry
       info[:players].each do |name|
+        binding.pry
         team_num.push(name[:number])
       end
     end
